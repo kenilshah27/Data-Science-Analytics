@@ -50,7 +50,7 @@ train$column <- mapvalues(train$column,from = c('A','B','C'),to = c('D','E','F')
 test$column <- mapvalues(test$column,from = c('A','B','C'),to = c('D','E','F')) # we need to map values in test as well
 
 #Model
-model <- glm(DependentVariable ~.,data = train)
+model <- lm(DependentVariable ~.,data = train)
 
 #Predicting values
 
