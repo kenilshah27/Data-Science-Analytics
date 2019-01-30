@@ -11,7 +11,7 @@ import numpy as np
 import seaborn as sns
 
 #Importing Dataset
-dataset = pd.read_csv("Salary_Data.csv")
+dataset = pd.read_csv("File Name")
 
 #Gives us a summary of the dataset
 dataset.describe()
