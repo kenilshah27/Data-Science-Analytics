@@ -15,14 +15,14 @@ import re
 from nltk.stem import PorterStemmer
 
 #Importing the dataset
-dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter = '\t', quoting = 3) # Take a tab seperated file as sentences may have commas in them 
+dataset = pd.read_csv('File Name', delimiter = '\t', quoting = 3) # Take a tab seperated file as sentences may have commas in them 
                                                             #quoting - 3 ignores double quotes in the sentences
 
 corpus = [] # Contains all the clean text which we have created
 
 for i in range(len(dataset)):
     #Cleaning the texts from the dataset
-    review = re.sub('[^a-zA-Z]', ' ', dataset['Review'][i]) 
+    review = re.sub('[^a-zA-Z]', ' ', dataset['Text column'][i]) # Here text column is the column containing text for your dataset 
     #Remove numbers and puntuation and replace those position with a space(second argument)
                                          
     review = review.lower() # Changes all the character to lowercase
