@@ -48,7 +48,7 @@ polynomial.fit(polynomial_x, train_Y)
 #Model 
 from sklearn.linear_model import LinearRegression
 model = LinearRegression()
-model.fit(train_X,train_Y)
+model.fit(polynomial_x,train_Y)
 
 #Predicting the values
 y_pred = model.predict(polynomial.fit_transform(test_X))
