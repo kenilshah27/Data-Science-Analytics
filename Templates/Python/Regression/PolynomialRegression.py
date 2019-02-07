@@ -51,7 +51,7 @@ model = LinearRegression()
 model.fit(train_X,train_Y)
 
 #Predicting the values
-y_pred = model.predict(test_X)
+y_pred = model.predict(polynomial.fit_transform(test_X))
 
 #If feature scaling is used on Y remember to inverse transform the y_pred variable
 
