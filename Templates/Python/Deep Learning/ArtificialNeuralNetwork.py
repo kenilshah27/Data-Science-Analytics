@@ -80,7 +80,7 @@ categorical_crossentropy for variables with more than two levels.
 metrics  is the criterion we use to evaluate our model """ 
 
 #Fitting the ANN to the dataset
-model.fit(train_X,train_Y,batch_size = 10,np_epoch = 100)
+model.fit(train_X,train_Y,batch_size = 10,nb_epoch = 100)
 """ batch size is the number of observations after which we want to update our weights
 nb_epoch is the number of times we want to pass the entire training set through the ANN """ 
 
