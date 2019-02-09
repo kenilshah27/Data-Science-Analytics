@@ -68,6 +68,7 @@ plt.plot(recall,precision,color = 'b',marker = '.')
 plt.show()
 
 #ROC - AUC Curve
+fpr,tpr,threshold = roc_curve(test_Y,pred)
 plt.plot([0, 1], [0, 1], linestyle='--')
 plt.plot(fpr, tpr, marker='.')
 plt.show()
