@@ -45,7 +45,7 @@ Importing Keras libraries"""
 
 import keras
 from keras.models import Sequential  #intialize neural network
-from keras.models import Dense       #build on the layers neural network
+from keras.layers import Dense       #build on the layers neural network
 
 #ANN with sequence of layers
 model = Sequential() # Initializing ANN by defining it as a sequence of layers
